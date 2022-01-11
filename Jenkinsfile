@@ -29,11 +29,8 @@ stage('Release') {
 steps {
 
 sh '''
-
 oc project hikkkn-greetings
-
 oc start-build greeting-console --follow --wait
-
 '''
 
 }
